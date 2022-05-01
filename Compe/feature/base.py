@@ -1,3 +1,6 @@
+import os 
+import sys
+
 import hashlib
 import imp
 import json
@@ -10,8 +13,9 @@ import numpy as np
 import pandas as pd
 from category_encoders import CountEncoder, OrdinalEncoder
 from typing_extensions import Literal
-from Utils.timer import Timer, decorate
-from Utils.memory import reduce_mem_usage
+
+
+from Compe.Utils import Timer, decorate, reduce_mem_usage
 
 def run_blocks(
     input_df: pd.DataFrame,
