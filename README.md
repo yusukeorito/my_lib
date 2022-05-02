@@ -1,5 +1,5 @@
 # データ分析用の自作ライブラリ
 
 
-##　特徴量作
+## Feature Engineering
 * base.py
