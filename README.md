@@ -2,4 +2,4 @@
 
 
 ## Feature Engineering
-* base.py
+* base.py LabelEncoding, CountEncoding, TargetEncoding,
