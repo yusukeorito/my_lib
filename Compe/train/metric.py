@@ -1,3 +1,4 @@
+import numpy as np
 from sklearn.metrics import (
     accuracy_score,
     f1_score,
@@ -15,3 +16,6 @@ def MSE(y_true, y_pred):
 
 def RMSE(y_true, y_pred):
     return mean_squared_error(y_true, y_pred, squared=False)
+
+def MAPE(y_true, y_pred):
+    return np.mean(np.abs(y_true - y_pred) / y_true)
