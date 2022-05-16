@@ -8,7 +8,7 @@ from sklearn import model_selection
 from sklearn.model_selection import KFold, StratifiedKFold, GroupKFold
 
 #from Compe.Utils.make_folder import REPORTS, PREDS, TRAINED
-from Compe.Utils.log import Util, Logger
+#from Compe.Utils.log import Util, Logger
 
 #logger = Logger(REPORTS)
 
