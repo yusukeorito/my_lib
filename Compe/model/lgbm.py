@@ -14,7 +14,7 @@ from sklearn.metrics import roc_auc_score
 
 import lightgbm as lgbm
 sys.path.append('.')
-from train.validation import get_stratifiedkfold, get_groupkfold
+from Compe.train.validation import get_stratifiedkfold, get_groupkfold
 
 
 #二値分類
