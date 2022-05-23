@@ -140,11 +140,14 @@ class AbstractBaseBlock:
                 del instance_params[key]
         return instance_params
 
-
+#numerical block
 class IdentityBlock(AbstractBaseBlock):
     def __init__(self, cols: List[str], if_exists="pass"):
         super().__init__(if_exists)
         self.cols = cols
+
+    def fit(self, input_df, y=None):
+        pass
 
     def transform(self, input_df: pd.DataFrame) -> pd.DataFrame:
         return input_df[self.cols].copy()
