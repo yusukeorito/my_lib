@@ -19,3 +19,6 @@ def RMSE(y_true, y_pred):
 
 def MAPE(y_true, y_pred):
     return np.mean(np.abs(y_true - y_pred) / y_true)
+
+def MER(y_true, y_pred):
+    return np.median(np.abs(y_true - y_pred) / y_true)
