@@ -15,6 +15,8 @@ from sklearn.metrics import roc_auc_score
 import lightgbm as lgbm
 sys.path.append('.')
 from Compe.train.validation import get_stratifiedkfold, get_groupkfold
+from Compe.train.metric import RMSE
+from Compe.Utils.make_folder import TRAINED
 
 
 #二値分類
