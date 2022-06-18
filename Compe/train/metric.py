@@ -22,3 +22,6 @@ def MAPE(y_true, y_pred):
 
 def MER(y_true, y_pred):
     return np.median(np.abs(y_true - y_pred) / y_true)
+
+def AUC(y_true, y_pred):
+    return roc_auc_score(y_true, y_pred)
