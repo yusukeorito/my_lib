@@ -46,7 +46,6 @@ def fit_lgb(X:pd.DataFrame, y:pd.DataFrame,cv, model_params:dict,fit_params:dict
 
    
     score = metric(y, oof_pred)
-
     print(f"OOF score - {score:.4f}")   
     return oof_pred, models
 

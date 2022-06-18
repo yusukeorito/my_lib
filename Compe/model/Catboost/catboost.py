@@ -7,7 +7,7 @@ from typing_extensions import Literal
 
 
 from catboost import CatBoost, Pool
-from Compe.model.basemodel import GBDTModel
+from Compe.model import GBDTModel
 
 class CatModel(GBDTModel):
     def __init__(
