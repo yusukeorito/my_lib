@@ -1,5 +1,6 @@
 model_params_regression = {
     "task_type": "CPU",
+    "num_boost_round": 10000,
                 
     "loss_function":"RMSE",
     "eval_metric":"RMSE",
@@ -8,13 +9,12 @@ model_params_regression = {
     "depth": 6,
     
     "random_state": 2022,
-    "verbose": -1,
-    "n_jobs": 8,
 }
 
 
 model_params_binary = {
     "task_type": "CPU",
+    "num_boost_round": 10000,
 
     "loss_function": "Logloss",
     "eval_metric":"AUC", 
@@ -24,9 +24,8 @@ model_params_binary = {
 
 
     "random_state": 2022,
-    "verbose": -1,
-    "n_jobs": 8,
     }
+
 
 
 model_params_multiclass = {
@@ -41,13 +40,11 @@ model_params_multiclass = {
 
     "random_state": 2022,
     "verbose": -1,
-    "n_jobs": 8,
 }
 
-fit_params = {
-    "num_boost_round": 10000,
+cat_fit_params = {
     "early_stopping_rounds": 100,
-    "verbose_eval": 100,
+    "verbose": 100,
 }
 
 
