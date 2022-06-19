@@ -27,7 +27,7 @@ def fit_lgb(X:pd.DataFrame, y:pd.DataFrame,cv, model_params:dict,fit_params:dict
         train_data = lgb.Dataset(tr_X, label=tr_y)
         valid_data = lgb.Dataset(va_X, label=va_y)
 
-        clf = lgb.train(
+        model = lgb.train(
                 model_params,
                 train_data,
                **fit_params,
@@ -37,9 +37,9 @@ def fit_lgb(X:pd.DataFrame, y:pd.DataFrame,cv, model_params:dict,fit_params:dict
             )
         
        
-        pred_i = clf.predict(va_X, num_iteration=clf.best_iteration)
+        pred_i = model.predict(va_X, num_iteration=model.best_iteration)
         oof_pred[va_idx] = pred_i
-        models.append(clf)
+        models.append(model)
 
         score = metric(va_y, pred_i)
         print(f" - fold{i+1} score - {score:.4f}")

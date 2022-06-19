@@ -25,3 +25,8 @@ def MER(y_true, y_pred):
 
 def AUC(y_true, y_pred):
     return roc_auc_score(y_true, y_pred)
+
+#Binaryにまとめて計算
+def Accuracy(y_true, y_pred):
+    y_pred = np.round(y_pred, 0)
+    return accuracy_score(y_true, y_pred)
