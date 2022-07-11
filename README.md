@@ -6,7 +6,8 @@
 * base.py: LabelEncoding, CountEncoding, TargetEncoding,
 
 ##  Model
-* lgbm.py: lightGBMの学習・予測、特徴量重要度の可視化
+* lgb.py: LightGBMの学習・予測、特徴量重要度の可視化(分類・回帰)
+* cat.py: Catboostの学習・予測、特徴量重要度の可視化(分類・回帰)
 
 ## Utils
 * log.py : log取得用
