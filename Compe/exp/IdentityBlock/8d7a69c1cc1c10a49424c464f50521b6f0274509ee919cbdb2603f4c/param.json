@@ -1,0 +1,9 @@
+{
+    "cols": [
+        "Age",
+        "Fare",
+        "Pclass",
+        "SibSp",
+        "Parch"
+    ]
+}

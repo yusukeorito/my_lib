@@ -1,0 +1,10 @@
+{
+    "cols": [
+        "Sex",
+        "Ticket",
+        "Cabin",
+        "Embarked"
+    ],
+    "handle_missing": "return_nan",
+    "handle_unknown": "return_nan"
+}

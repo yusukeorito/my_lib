@@ -10,7 +10,7 @@ from sklearn.model_selection import KFold, GroupKFold, StratifiedKFold
 from Compe.train.metric import *
 
 
-def fit_lgb(X:pd.DataFrame, y:pd.DataFrame,cv, model_params:dict,fit_params:dict, metric:function, fobj=None, feval=None):
+def fit_lgb(X:pd.DataFrame, y:pd.DataFrame,cv, model_params:dict,fit_params:dict, metric, fobj=None, feval=None):
 
     X, y = X.values, y.values
 
