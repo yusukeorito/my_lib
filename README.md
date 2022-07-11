@@ -11,3 +11,7 @@
 ## Utils
 * log.py : log取得用
 * make_folder.py: コンペ用のフォルダ作成関数
+
+
+## EDA 
+* 探索的データ分析による可視化手法
